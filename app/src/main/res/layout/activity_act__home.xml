@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ACT_Home">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="PageView1"
+        android:padding="20dp"
+        android:text="PageView1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="PageView2"
+        android:padding="20dp"
+        android:text="PageView2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="TextView3"
+        android:padding="20dp"
+        android:text="onClickNoFast" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="HelloActivity"
+        android:padding="20dp"
+        android:text="MVP_2" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="AdapterDelegates"
+        android:padding="20dp"
+        android:text="AdapterDelegates" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="TelPermission"
+        android:padding="20dp"
+        android:text="TelPermission" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ACT_TransF"
+        android:padding="20dp"
+        android:text="ACT_TransF" />
+
+</LinearLayout>

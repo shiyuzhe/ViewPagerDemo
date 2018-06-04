@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context=".trans.ACT_TransF">
+
+    <LinearLayout
+        android:id="@+id/left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/alphe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="AlphaPageTransformer" />
+
+        <TextView
+            android:id="@+id/rotate_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="RotateDownPageTransformer" />
+
+        <TextView
+            android:id="@+id/rotate_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="RotateUpPageTransformer" />
+
+        <TextView
+            android:id="@+id/rotate_y"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="RotateYTransformer" />
+
+        <TextView
+            android:id="@+id/scale_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="ScaleInTransformer" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/left"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/standard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="ACT_Standard" />
+
+        <TextView
+            android:id="@+id/cricle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="ACT_Cricle" />
+
+        <TextView
+            android:id="@+id/stack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="StackPageTransformer" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:clipChildren="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--android:layout_marginLeft="60dp"-->
+    <!--android:layout_marginRight="60dp"-->
+</android.support.constraint.ConstraintLayout>

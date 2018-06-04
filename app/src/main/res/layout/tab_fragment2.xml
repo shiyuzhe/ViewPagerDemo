@@ -12,6 +12,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="218dp"
+        android:padding="20dp"
         android:text="Page:"
         android:textSize="20sp"
         android:textStyle="bold"/>
@@ -22,6 +23,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:textSize="50sp"
+        android:textSize="20sp"
         android:text="圆桌"/>
 </RelativeLayout>

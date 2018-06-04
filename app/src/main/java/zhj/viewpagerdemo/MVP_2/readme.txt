@@ -1,0 +1,17 @@
+使用Activity和Fragment作为视图层(View)真的合适么?
+
+目前很多使用了MVP模式的android 项目,基本上都是将activity和fragment作为视图层来进行处理的.
+而presenters通常是通过继承自被视图层实例化或者注入的对象来得到的.
+诚然,我同意说,这种方式可以节省掉很多让人厌烦的"import android.."语句,
+并且将presenters从activity的生命周期中分割出来以后, 项目后续的维护会变得简便很多.这种思路是正确的，
+但是,从另一个角度来说, activity 有一个很复杂的生命周期(fragment的生命周期可能会更复杂),
+而这些生命周期很有可能对你项目的业务逻辑有非常重大的影响. Activity 可以获取上下文环境和多种android系统服务.
+Activity中发送Intent，启动Service和执行FragmentTransisitons等。
+而这些特性在我看来绝不应该是视图层应该涉及的领域(视图的功能就是现实数据和从用户那里获取输入数据，
+在理想的情况下，视图应该避免业务逻辑).
+
+HelloVu类直接实现了Vu接口，我的Presenter的getVuClass方法直接引用了实现类。
+传统的MVP模式中，Presenter是要通过接口与他们的View解耦合的。因此，你也可以这么做。
+避免直接实现Vu接口，我们可以创建一个扩展了Vu的IHelloView接口，然后使用这个接口作为Presenter的泛型类型。
+
+使用adapter作为presenter

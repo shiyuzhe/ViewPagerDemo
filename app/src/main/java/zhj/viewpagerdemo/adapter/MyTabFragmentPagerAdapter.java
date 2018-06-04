@@ -3,16 +3,8 @@ package zhj.viewpagerdemo.adapter;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.view.View;
-import android.view.ViewGroup;
 
 import java.util.List;
-
-import zhj.viewpagerdemo.tabfragment.TabFragment1;
-import zhj.viewpagerdemo.tabfragment.TabFragment2;
-import zhj.viewpagerdemo.tabfragment.TabFragment3;
-import zhj.viewpagerdemo.tabfragment.TabFragment4;
 
 /**
  * Created by HongJay on 2016/8/11.
